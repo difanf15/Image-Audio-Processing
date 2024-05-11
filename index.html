@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizer & Audio Compressor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="image_resizer">
+        <h1>Image Resizer (to 50% resolution)</h1>
+        <input type="file" id="input" accept=".jpg, .jpeg, .png" />
+        <div id="wrapper"></div>
+      </div>
+      <div id="audio_compressor">
+        <h1>Audio Compressor (to 50% size)</h1>
+        <input type="file" id="audioFileInput" accept="audio/*" />
+        <button id="compressBtn">Compress</button>
+        <a id="downloadLink" download="compressed_audio.mp3"></a>
+      </div>
+    </div>
+
+    <script src="image_resizer.js"></script>
+    <script src="audio_compressor.js"></script>
+  </body>
+</html>
